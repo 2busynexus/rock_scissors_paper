@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Welcome screen-->
+    <div class="container" id="welcomeScreen">
+        <h1>Welcome!</h1>
+        <h2>Play a round of Rock, Scissors, Paper?</h2>
+        <button id="go" onclick="welcome()">GO</button>
+    </div>
+    <!--Selection screen-->
+    <div class="container" id="pickScreen">
+        <h2>Choose your hand: </h2>
+        <div>
+            <button id="rock" onclick="playerPick(this.id)" onmouseover="pictureHover(0)" onmouseout="pictureOut()">Rock</button>
+            
+            <button id="scissors" onclick="playerPick(this.id)" onmouseover="pictureHover(1)" onmouseout="pictureOut()">Scissors</button>
+          
+            <button id="paper" onclick="playerPick(this.id)" onmouseover="pictureHover(2)" onmouseout="pictureOut()">Paper</button>
+         
+        </div>
+    </div>
+    <!--Result screen-->
+    <div class="container" id="resultScreen">
+        <h2>You choose: <span></span></h2>
+        <h2 id="cpu">CPU choose: <span></span></h2>
+        <p><button id="startGame" onclick="startGame()">START GAME</button></p>
+        <h1 id="result"></h1>
+        <p><button id="newGame" onclick="clearBoard()">NEW GAME</button></p>
+    </div>
+    <!--Player and cpu images-->
+    <img id="playerImg">
+    <img id="cpuImg">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

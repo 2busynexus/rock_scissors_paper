@@ -1,0 +1,83 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: hsl(199, 50%, 25%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(199, 50%, 85%);;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    background-color: hsl(199, 50%, 50%);
+    border-radius: 20px;
+}
+
+#pickScreen {
+    display: none;
+}
+
+#resultScreen {
+    display: none;
+}
+ 
+button {
+    border: 0px;
+    background-color: hsl(199, 50%, 25%);
+    color: hsl(199, 50%, 85%);
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 25px 10px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: hsl(199, 50%, 75%);
+    color: hsl(199, 50%, 25%);
+}
+
+button:active {
+    background-color: hsl(199, 50%, 15%);
+    color: hsl(199, 50%, 85%);
+    transition: 0.1s;
+}
+
+#playerImg {
+    position: absolute;
+    left: -20%;
+    transition: 1s ease-in-out;
+    height: 400px;
+}
+
+#cpuImg {
+    position: absolute;
+    right: -20%;
+    transition: 1s ease-in-out;
+    height: 400px;
+}
+
+#startGame  {
+    display: none;
+}
+
+#newGame {
+    display: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
